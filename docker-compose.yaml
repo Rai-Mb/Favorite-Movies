@@ -1,0 +1,13 @@
+ version: '3.1'
+
+ services:  
+   db:
+     image: postgres
+     restart: always
+     environment:
+        POSTGRES_PASSWORD: movie01
+        POSTGRES_USER: movie
+        POSTGRES_DB: postegres
+
+     ports:
+       - '5432:5432'
