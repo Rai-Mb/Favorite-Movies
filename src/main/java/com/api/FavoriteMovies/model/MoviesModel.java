@@ -28,9 +28,11 @@ public class MoviesModel implements Serializable{
 
     @Column(nullable = false, length = 30)
     private String title;
-
+    @Column(nullable = false)
     private int runTimeMins;
+    @Column(nullable = false, length = 30)
     private String genres;
+    @Column(nullable = false)
     private double imdbRating;
     
     public static long getSerialversionuid() {
