@@ -28,6 +28,7 @@ public class MoviesService {
 
     public List<MoviesModel> findAll(){
         return moviesRepository.findAll();
+        
     }
 
     public Optional<MoviesModel> findById(UUID id){

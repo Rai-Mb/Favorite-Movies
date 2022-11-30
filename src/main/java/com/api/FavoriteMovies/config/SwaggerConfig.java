@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com/api/Favorite-Movies"))
+                .apis(RequestHandlerSelectors.basePackage("com/api/FavoriteMovies"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());                
@@ -28,7 +28,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-                .title("Favorite-Movies").description("Salvar e pesquisar filmes, e integrar com os dados da API IMDB")
+                .title("Favorite-Movies")
+                .description("Salvar e pesquisar filmes, e integrar com os dados da API IMDB")
                 .version("1.0.0")
                 .contact(new Contact( "Raí Barreira", "https://github.com/Raí-Mb", "rmbraibarreira@gmail.com"))
                 .build();
